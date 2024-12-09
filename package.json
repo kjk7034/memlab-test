@@ -1,0 +1,14 @@
+{
+  "name": "memlab-examples",
+  "version": "1.0.0",
+  "description": "Examples of memory leak detection using MemLab",
+  "scripts": {
+    "test:memory": "memlab run --scenario ./scenarios/test-page.js",
+    "test:reset": "memlab reset"
+  },
+  "devDependencies": {
+    "@memlab/api": "^1.0.0",
+    "@memlab/core": "^1.0.0",
+    "memlab": "^1.0.0"
+  }
+}

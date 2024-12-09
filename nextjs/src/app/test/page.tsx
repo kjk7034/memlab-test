@@ -9,7 +9,9 @@ export default function Page() {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup 누락
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -17,7 +19,10 @@ export default function Page() {
     document.body.appendChild(div);
     setNode(div);
 
-    // DOM 해제 누락
+    return () => {
+      document.body.removeChild(div);
+      setNode(null);
+    };
   }, []);
 
   useEffect(() => {
@@ -25,7 +30,9 @@ export default function Page() {
       console.log("Running...");
     }, 500);
 
-    // Cleanup 누락
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
