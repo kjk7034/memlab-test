@@ -2,7 +2,7 @@
 
 ## Overview
 
-MemLab은 Meta에서 개발한 JavaScript 메모리 누수 감지를 위한 테스트 프레임워크입니다. 이 도구는 웹 애플리케이션에서의 메모리 누수를 자동으로 감지하고 분석하는 데 도움을 줍니다.
+[MemLab](https://facebook.github.io/memlab/)은 Meta에서 개발한 JavaScript 메모리 누수 감지를 위한 테스트 프레임워크입니다. 이 도구는 웹 애플리케이션에서의 메모리 누수를 자동으로 감지하고 분석하는 데 도움을 줍니다.
 
 ### 주요 기능
 
